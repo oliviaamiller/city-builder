@@ -4,7 +4,11 @@ const skylineDropdown = document.getElementById('skyline-dropdown');
 const waterfrontDropdown = document.getElementById('waterfront-dropdown');
 const castleDropdown = document.getElementById('castle-dropdown');
 
-console.log(skylineDropdown, waterfrontDropdown, castleDropdown);
+const skylineImg = document.getElementById('skyline-img');
+const waterfrontImg = document.getElementById('waterfront-img');
+const castleImg = document.getElementById('castle-img');
+
+console.log(skylineImg, waterfrontImg, castleImg);
 
 
 // let state
