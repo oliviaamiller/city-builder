@@ -15,27 +15,27 @@
 <body>
    <section class="dropdowns">
     <label>
-        Skyline
+        City
         <select id="skyline-dropdown">
-            <option value="1">first skyline</option>
-            <option value="2">second skyline</option>
-            <option value="3">third skyline</option>
+            <option value="1">Hopper</option>
+            <option value="2">Brown</option>
+            <option value="3">Guignard</option>
         </select>
     </label>
     <label>
         Waterfront 
         <select id="skyline-dropdown">
-            <option value="1">first waterfront</option>
-            <option value="2">second waterfront</option>
-            <option value="3">third waterfront</option>
+            <option value="1">Seurat</option>
+            <option value="2">Hartley</option>
+            <option value="3">Mondrian</option>
         </select>
     </label>
     <label>
         Castles 
         <select id="skyline-dropdown">
-            <option value="1">first castle</option>
-            <option value="2">second castle</option>
-            <option value="3">third castle</option>
+            <option value="1">Klee</option>
+            <option value="2">Cézanne</option>
+            <option value="3">Scoggins</option>
         </select>
     </label>
    </section>
@@ -44,10 +44,12 @@
        <div class="slogan-input">
            <label>
                City Slogan
-               <input>
+               <input id="slogan-input">
            </label>
-           <button>add</button>
+           <button id="slogan-button">add</button>
        </div>
+       <div class="slogan-output"></div>
+       <div class="count-changes"></div>
    </main>
 
     <script type="module" src="./app.js"></script>
