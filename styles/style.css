@@ -16,6 +16,14 @@ main {
     
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    font-size: 150%;
+}
+
 .dropdowns {
     display: flex;
     flex-direction: row;

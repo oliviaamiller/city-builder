@@ -17,6 +17,7 @@ const sloganOutput = document.getElementById('slogan-output');
 
 const nameButton = document.getElementById('name-button');
 const nameInput = document.getElementById('name-input');
+const nameOutput = document.getElementById('name-output');
 
 const sloganArray = [];
 // let state
@@ -64,13 +65,19 @@ castleDropdown.addEventListener('change', () => {
 });
 
 sloganButton.addEventListener('click', () => {
-    const newSlogan = sloganInput.value;
+    if (sloganInput.value !== '') { 
+        const newSlogan = nameInput.value + sloganInput.value;
+        sloganArray.push(newSlogan);
+        sloganInput.value = ''; 
+        nameInput.value = ''; 
+        displaySlogans();
+    }
+});
 
-    sloganArray.push(newSlogan);
-
-    sloganInput.value = '';
-
-    displaySlogans();
+nameButton.addEventListener('click', () => {
+    if (nameInput.value !== '') {
+        nameOutput.textContent = nameInput.value;
+    }
 });
 
 function displayStats() {
