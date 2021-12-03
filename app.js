@@ -81,7 +81,6 @@ function displaySlogans() {
 
     for (let slogan of sloganArray) {
         const p = document.createElement('p');
-      // p.classList.add('slogan');
         p.textContent = slogan;
         sloganOutput.append(p);}
 }
