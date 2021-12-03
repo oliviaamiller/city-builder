@@ -66,8 +66,13 @@ castleDropdown.addEventListener('change', () => {
 
 sloganButton.addEventListener('click', () => {
     if (sloganInput.value !== '') { 
-        const newSlogan = nameInput.value + sloganInput.value;
-        sloganArray.push(newSlogan);
+        let dynamicSlogan = '';
+        if (nameInput.value) {
+            dynamicSlogan = `${nameInput.value}: ${sloganInput.value}`;
+        } else {
+            dynamicSlogan = sloganInput.value;
+        }
+        sloganArray.push(dynamicSlogan);
         sloganInput.value = ''; 
         nameInput.value = ''; 
         displaySlogans();
