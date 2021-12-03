@@ -68,7 +68,7 @@ sloganButton.addEventListener('click', () => {
     if (sloganInput.value !== '') { 
         let dynamicSlogan = '';
         if (nameInput.value) {
-            dynamicSlogan = `${nameInput.value}: ${sloganInput.value}`;
+            dynamicSlogan = `${nameInput.value} : ${sloganInput.value}`;
         } else {
             dynamicSlogan = sloganInput.value;
         }

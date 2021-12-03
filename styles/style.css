@@ -43,7 +43,12 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    
+}
+
+#slogan-output {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 30px;
+    margin: 0;
 }
 
 .slogan-stuff input {
