@@ -49,6 +49,7 @@ main {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
+   height: 400px;
 }
 
 .skyline, .waterfront, .castle {
