@@ -17,11 +17,23 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 550px;
+    margin: 250px;
 }
 
 .slogan-input button {
     background-color: yellow;
     border: solid 1px yellow;
     cursor: pointer;
+}
+
+.images {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.skyline, .waterfront, .castle {
+    max-height: 300px;
+    width: auto;
+    margin: 20px;
 }
