@@ -13,64 +13,59 @@
 </head>
 
 <body>
-   <section class="dropdowns">
-    <label>
-        City
-        <select id="skyline-dropdown">
-            <option value="1">Hopper</option>
-            <option value="2">Brown</option>
-            <option value="3">Guignard</option>
-        </select>
-    </label>
-    <label>
-        Waterfront 
-        <select id="waterfront-dropdown">
-            <option value="1">Seurat</option>
-            <option value="2">Hartley</option>
-            <option value="3">Mondrian</option>
-        </select>
-    </label>
-    <label>
-        Castle
-        <select id="castle-dropdown">
-            <option value="1">Klee</option>
-            <option value="2">Cézanne</option>
-            <option value="3">Scoggins</option>
-        </select>
-    </label>
-   </section>
+    <main>  
+        <section class="dropdowns">
+            <select id="skyline-dropdown">
+                 <option value="0">Choose a City:</option>
+                 <option value="1">Hopper</option>
+                 <option value="2">Brown</option>
+                 <option value="3">Guignard</option>
+             </select>
+      
+             <select id="waterfront-dropdown">
+                 <option value="0">Choose a Waterfront:</option>
+                 <option value="1">Seurat</option>
+                 <option value="2">Hartley</option>
+                 <option value="3">Mondrian</option>
+             </select>
+        
+             <select id="castle-dropdown">
+                 <option value="0">Choose a Castle:</option>
+                 <option value="1">Klee</option>
+                 <option value="2">Cézanne</option>
+                 <option value="3">Scoggins</option>
+             </select>
+        </section>
+     
+        <section class="images">
+             <div>
+                 <img class="skyline" id="skyline-img">
+             </div>
+             <div>
+                 <img class="waterfront" id="waterfront-img">
+             </div>
+             <div>
+                 <img class="castle" id="castle-img">
+             </div>
+        </section>
 
-   <section class="images">
-        <div>
-            <img class="skyline" id="skyline-img">
-        </div>
-        <div>
-            <img class="waterfront" id="waterfront-img">
-        </div>
-        <div>
-            <img class="castle" id="castle-img">
-        </div>
-   </section>
+    </main>
+   
 
-
-
-   <main>
-       <span class="slogan-input">
+   <section>
+       <span class="slogan-stuff">
         <div>
-            <label>
-                City Slogan
-                <input id="slogan-input">
-            </label>
+            <input placeholder="Your City Slogan" id="slogan-input">
             <button id="slogan-button">add</button>
         </div>
+        <div>
+            <p id="slogan-output"></p>
+        </div>
+        <div>
+             <p id="changes-count"></p>
+         </div>
        </span>
-       <span class = slogan-output>
-            <div id="slogan-output"></div>
-            <div id="changes-count"></div>
-       </span>
-       
-       
-   </main>
+   </section>
 
     <script type="module" src="./app.js"></script>
 </body>

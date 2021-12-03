@@ -6,31 +6,43 @@ html, body {
     background-color: wheat;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
 
 .dropdowns {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 50px;
+    position: relative;
+    
 }
 
-.slogan-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
+.dropdowns select {
+    border: none;
+
 }
 
-.slogan-input button {
-    background-color: yellow;
-    border: solid 1px yellow;
-    cursor: pointer;
-}
-
-.slogan-output {
+.slogan-stuff {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
+}
+
+.slogan-stuff input {
+    border: none;
+}
+
+.slogan-stuff button {
+    background-color: yellow;
+    border: solid 1px yellow;
+    cursor: pointer;
 }
 
 .images {
@@ -44,3 +56,6 @@ html, body {
     width: auto;
     margin: 20px;
 }
+
+
+
