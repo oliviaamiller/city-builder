@@ -21,7 +21,7 @@ test('time to test a function', (expect) => {
 });
 
 test('createCountString returns a string describing the current count of each piece of state supplied as an argument', (expect) => {
-    const expected = `the skyline has changed 4 times, the waterfront has changed 5 times, the castle has changed 6 times.`;
+    const expected = `the city has changed 4 times, the waterfront has changed 5 times, the castle has changed 6 times.`;
 
     const actual = createCountString(4, 5, 6);
 
