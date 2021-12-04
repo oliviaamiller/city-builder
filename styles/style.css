@@ -1,46 +1,93 @@
+
+
 html, body {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
     background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 150%;
+}
 
 .dropdowns {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 50px;
+    position: relative;
+    
 }
 
-.slogan-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
+.dropdowns select {
+    border: none;
+    padding: 2px;
 }
 
-.slogan-input button {
-    background-color: yellow;
-    border: solid 1px yellow;
-    cursor: pointer;
-}
-
-.slogan-output {
+.slogan-stuff {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#slogan-output {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 30px;
+    margin: 0;
+}
+
+.slogan-stuff input {
+    border: none;
+    padding: 2px;
+}
+
+input::placeholder {
+    color: wheat; 
+} 
+
+.slogan-stuff button {
+    background-color: yellow;
+    border: solid 1px yellow;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.slogan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .images {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
+   max-height: 400px;
+   width: auto;
 }
 
 .skyline, .waterfront, .castle {
-    max-height: 300px;
+    height: 300px;
     width: auto;
     margin: 20px;
+
 }
+
+
+

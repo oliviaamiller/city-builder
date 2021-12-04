@@ -1,7 +1,6 @@
 // import functions and grab DOM elements
 import { createCountString } from './utils.js';
 
-
 const skylineDropdown = document.getElementById('skyline-dropdown');
 const waterfrontDropdown = document.getElementById('waterfront-dropdown');
 const castleDropdown = document.getElementById('castle-dropdown');
@@ -15,6 +14,10 @@ const changesCount = document.getElementById('changes-count');
 const sloganButton = document.getElementById('slogan-button');
 const sloganInput = document.getElementById('slogan-input');
 const sloganOutput = document.getElementById('slogan-output');
+
+const nameButton = document.getElementById('name-button');
+const nameInput = document.getElementById('name-input');
+const nameOutput = document.getElementById('name-output');
 
 const sloganArray = [];
 // let state
@@ -62,13 +65,24 @@ castleDropdown.addEventListener('change', () => {
 });
 
 sloganButton.addEventListener('click', () => {
-    const newSlogan = sloganInput.value;
+    if (sloganInput.value !== '') { 
+        let dynamicSlogan = '';
+        if (nameInput.value) {
+            dynamicSlogan = `${nameInput.value} : ${sloganInput.value}`;
+        } else {
+            dynamicSlogan = `${nameOutput.textContent} : ${sloganInput.value}`;
+        }
+        sloganArray.push(dynamicSlogan);
+        sloganInput.value = ''; 
+        nameInput.value = ''; 
+        displaySlogans();
+    }
+});
 
-    sloganArray.push(newSlogan);
-
-    sloganInput.value = '';
-
-    displaySlogans();
+nameButton.addEventListener('click', () => {
+    if (nameInput.value !== '') {
+        nameOutput.textContent = nameInput.value;
+    }
 });
 
 function displayStats() {
@@ -81,7 +95,6 @@ function displaySlogans() {
 
     for (let slogan of sloganArray) {
         const p = document.createElement('p');
-      // p.classList.add('slogan');
         p.textContent = slogan;
         sloganOutput.append(p);}
 }

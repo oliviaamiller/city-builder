@@ -5,72 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>World Builder</title>
 </head>
 
 <body>
-   <section class="dropdowns">
-    <label>
-        City
-        <select id="skyline-dropdown">
-            <option value="1">Hopper</option>
-            <option value="2">Brown</option>
-            <option value="3">Guignard</option>
-        </select>
-    </label>
-    <label>
-        Waterfront 
-        <select id="waterfront-dropdown">
-            <option value="1">Seurat</option>
-            <option value="2">Hartley</option>
-            <option value="3">Mondrian</option>
-        </select>
-    </label>
-    <label>
-        Castle
-        <select id="castle-dropdown">
-            <option value="1">Klee</option>
-            <option value="2">Cézanne</option>
-            <option value="3">Scoggins</option>
-        </select>
-    </label>
-   </section>
+    <header>
+        <h2 id="name-output">Art World</h2>
+    </header>
+    <main>  
+        <section class="dropdowns">
+            <div class="custom-dd">
+                <select id="skyline-dropdown">
+                     <option value="0">Choose a City:</option>
+                     <option value="1">Hopper</option>
+                     <option value="2">Brown</option>
+                     <option value="3">Guignard</option>
+                </select>
+            </div>
+    
+            <div class="custom-dd">
+                <select id="waterfront-dropdown">
+                    <option value="0">Choose a Waterfront:</option>
+                    <option value="1">Seurat</option>
+                    <option value="2">Hartley</option>
+                    <option value="3">Mondrian</option>
+                </select>
+            </div>
+                 
+            <div class="custom-dd">
+                <select id="castle-dropdown">
+                    <option value="0">Choose a Castle:</option>
+                    <option value="1">Klee</option>
+                    <option value="2">Cézanne</option>
+                    <option value="3">Scoggins</option>
+                </select>
+            </div>
+        </section>
+     
+        <section class="images">
+             <div>
+                 <img class="skyline" id="skyline-img">
+             </div>
+             <div>
+                 <img class="waterfront" id="waterfront-img">
+             </div>
+             <div>
+                 <img class="castle" id="castle-img">
+             </div>
+        </section>
 
-   <section class="images">
-        <div>
-            <img class="skyline" id="skyline-img">
-        </div>
-        <div>
-            <img class="waterfront" id="waterfront-img">
-        </div>
-        <div>
-            <img class="castle" id="castle-img">
-        </div>
-   </section>
+    </main>
+   
 
-
-
-   <main>
-       <span class="slogan-input">
-        <div>
-            <label>
-                City Slogan
-                <input id="slogan-input">
-            </label>
-            <button id="slogan-button">add</button>
-        </div>
+   <section>
+       <span class="slogan-stuff">
+           <div>
+               <input placeholder="Name Your City" id="name-input">
+               <button id="name-button">add</button>
+           </div>
+            <div>
+                <input placeholder="Your City Slogan" id="slogan-input">
+                <button id="slogan-button">add</button>
+             </div>
+            <div class="slogan-container">
+                <p id="slogan-output"></p>
+            </div>
+            <div>
+                <p id="changes-count"></p>
+             </div>
        </span>
-       <span class = slogan-output>
-            <div id="slogan-output"></div>
-            <div id="changes-count"></div>
-       </span>
-       
-       
-   </main>
+   </section>
 
     <script type="module" src="./app.js"></script>
 </body>
