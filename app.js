@@ -70,7 +70,7 @@ sloganButton.addEventListener('click', () => {
         if (nameInput.value) {
             dynamicSlogan = `${nameInput.value} : ${sloganInput.value}`;
         } else {
-            dynamicSlogan = sloganInput.value;
+            dynamicSlogan = `${nameOutput.textContent} : ${sloganInput.value}`;
         }
         sloganArray.push(dynamicSlogan);
         sloganInput.value = ''; 
