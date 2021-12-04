@@ -68,6 +68,12 @@ input::placeholder {
     margin: 2px;
 }
 
+.slogan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .images {
    display: flex;
    flex-direction: row;
